@@ -11,6 +11,7 @@
 <ul>
   <li><a href="#func">Funcionalidades</li>
   <li><a href="#pratic">Práticas adotadas</li>
+   <li><a href="#tests">Testes Unitários</li>
     <li><a href="#instalacao">Instalação</li>
       <li><a href="#endpoints">API Endpoints</li>
 </ul>
@@ -35,6 +36,21 @@
 <li>Tratamento de respostas de erro
  <li>Testes Unitários</li>
 </ul>
+
+<h2 id="tests">Testes Unitários</h2>
+<p>Todos os testes são executados de forma automatizada utilizando frameworks apropriados para testes unitários, como JUnit, Mockito.</p>
+<p>Os testes são executados regularmente como parte do processo de integração contínua (CI) para garantir a qualidade contínua do código.</p>
+
+<ul>
+ <h3>Controller</h3>
+ <li>Teste de Requisições HTTP: Verificação de que as requisições HTTP são tratadas corretamente pelo controller, incluindo testes para os métodos GET, POST, PUT e DELETE, conforme aplicável.</li>
+ <li>Teste de Validação de Entrada: Garantia de que a entrada do usuário seja validada adequadamente antes de ser processada pelo controller.</li>
+ <li>Teste de Respostas: Verificação de que as respostas retornadas pelo controller estejam corretas, incluindo códigos de status HTTP, corpo da resposta e headers.</li>
+</ul>
+<h2>Service</h2>
+ <li>Teste de Lógica de Negócios: Verificação de que as funções e métodos do service executam corretamente a lógica de negócios da aplicação.
+ <li>Teste de Integração com Repositório: Mocking ou simulação de dependências do repositório para testar a interação correta entre o service e o repository.
+ <li>Teste de Exceções e Erros: Verificação de que o service lida adequadamente com exceções e erros, garantindo um comportamento resiliente.
 
 <h2 id="instalacao">Instalação</h2>
 <ol>
